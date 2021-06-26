@@ -7,7 +7,7 @@ import LoadSkeleton from "../components/LoadingSkeleton";
 
 function ClusterDebugger() {
     const [threshold, setThreshold] = useState(0.85)
-    const { isLoading, error, data, isFetching } = useQuery(["cluster-items", threshold], () =>
+    const { isLoading, error, data } = useQuery(["cluster-items", threshold], () =>
         fetch(
             `http://127.0.0.1:8000/cluster-items?threshold=${threshold}`
         ).then((res) => res.json()),

@@ -19,5 +19,7 @@ Docker is required to run this project.
 The following command setups the backend, frontend, and database (MongoDB).
 
 ```shell
-  docker-compose up
+docker-compose up
 ```
+
+The web app can then be accessed at <http://localhost:3000>

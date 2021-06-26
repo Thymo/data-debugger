@@ -6,7 +6,7 @@ import {useQuery} from "react-query";
 import LoadSkeleton from "../components/LoadingSkeleton";
 
 function ConfusedDebugger() {
-    const { isLoading, error, data, isFetching } = useQuery("confused-items", () =>
+    const { isLoading, error, data } = useQuery("confused-items", () =>
     fetch(
       "http://127.0.0.1:8000/confused-items"
         ).then((res) => res.json()),
